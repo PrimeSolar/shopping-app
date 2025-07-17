@@ -1,5 +1,12 @@
 # Shopping App
 
+- [Shopping App](#shopping-app)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Getting Started](#getting-started)
+  - [Support My Work ☕](#support-my-work-)
+  - [Contact Me 💬](#contact-me-)
+
 Welcome to the Shopping App! 🛒
 
 The Shopping App is a user-friendly web application designed to simplify your shopping experience.
