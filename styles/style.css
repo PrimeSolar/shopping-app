@@ -1,148 +1,184 @@
 html {
   height: 100vh;
-  max-height: 100vh;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: "Arial", sans-serif;
 }
 
 body {
-  margin: 0 10vw 0;
+  margin: 0 10vw;
   max-width: 80vw;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #f7f7f7;
   overflow-x: hidden;
 }
 
 nav {
-  width: 100vw;
   background-color: #00705a;
-  height: 5rem;
-  line-height: 5rem;
   color: #ffffff;
-  padding-left: 2rem;
-  margin: 0 0 1rem 0;
-  transform: translate(-10vw, 0);
-  padding: 0;
-  margin: 0;
-}
-
-h1 {
-  padding: 0;
-  margin: 0;
+  padding: 1rem;
   text-align: center;
+  box-shadow: 0 2px 4px #00000037;
 }
 
 .container {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
+  padding: 2rem;
   background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #0000001a;
+  margin-top: 2rem;
 }
 
 #itemForm {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 #itemForm label {
   display: block;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="number"] {
   border: 1px solid #bbbbbb;
   border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 300px;
+  transition: border 0.3s;
 }
 
-#itemForm input {
-  height: 2rem;
-  text-align: center;
-  border: 1px solid #bfbfbf;
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #00705a;
+  outline: none;
 }
 
-#quantityInput,
-#priceInput {
-  width: 2.5rem;
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between buttons */
 }
 
-#submitButton {
-  border: unset;
+#submitButton,
+#clearButton {
+  border: none;
   background: #00705a;
   color: #ffffff;
-  padding: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 5px;
 }
 
-#submitButton:hover {
+#submitButton:hover,
+#editButton:hover,
+#clearButton:hover {
   background: #00795a;
+  transform: translateY(-2px);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Remove any gap between buttons */
+  justify-content: space-between; /* Distribute space between buttons */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.editButton {
+  border: none;
+  background: #00705a;
+  color: #ffffff;
+  margin: 0 0 5px;
+  padding: 0.5rem 0; /* Adjust padding as needed */
   cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 5px;
+}
+
+.deleteButton {
+  border: none;
+  background: #b10000;
+  color: #ffffff;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.deleteButton:hover {
+  background: #bf0000;
+  transform: translateY(-2px);
+}
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between buttons */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.editButton,
+.deleteButton {
+  border: none;
+  background: #00705a;
+  color: #ffffff;
+  padding: 0.5rem; /* Adjust padding as needed */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 5px;
+  width: auto; /* Allow buttons to size based on content */
+}
+
+.deleteButton {
+  background: #b10000;
 }
 
 #itemsDiv {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  min-width: 80vw;
+  width: 80vw;
 }
 
 .item {
   display: grid;
-  grid-template-columns: 2.5rem 1fr 2.5rem;
+  grid-template-columns: 2.5rem 1fr 5rem;
   margin: 10px 0;
   background: #ffffff;
   border-radius: 8px;
-  background-color: #ffffff;
   box-shadow: 0 4px 8px #0000001a;
+  padding: 0.5rem;
+  align-items: center;
   transition: transform 0.2s;
 }
 
 .item:hover {
-  transform: scale(1.0025);
+  transform: scale(1.02);
+}
+
+p {
+  margin: 0.5rem;
+}
+
+.item label {
+  height: 100%;
 }
 
 .checkbox {
   width: 2.5rem;
   height: 100%;
-  margin: 0;
 }
 
 .itemInfo {
   text-align: center;
-  padding: 0 2.5rem;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  line-break: anywhere;
-}
-
-.deleteButton {
-  margin: 0 0 0 auto;
-  padding: 0;
-  border: unset;
-  background: #b10000;
-  color: #ffffff;
-  font-size: 0.8rem;
-  width: 2.5rem;
-  height: 100%;
-}
-
-.deleteButton:hover {
-  background: #bf0000;
-  cursor: pointer;
-}
-
-.deleteButton:active {
-  margin-top: 3px;
+  padding: 0 1rem;
 }
 
 .purchased {
-  background-color: #00705a;
+  background-color: #007f5a;
   color: #ffffff;
 }
 
@@ -151,10 +187,28 @@ p {
 }
 
 #totalPriceDiv {
-  display: inline-block;
-  margin: 0 auto 20px;
-  padding: 0;
+  margin-top: 2rem;
   font-size: 1.5em;
   font-weight: bold;
   color: #444444;
+  text-align: center;
+  padding: 1rem;
+  background: #e0e0e0;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  #itemForm {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    max-width: calc(100% - 2rem);
+  }
+
+  .button-group {
+    flex-direction: column; /* Stack buttons on small screens */
+    gap: 0.5rem; /* Space between stacked buttons */
+  }
 }
