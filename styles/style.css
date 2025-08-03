@@ -13,10 +13,13 @@ body {
 }
 
 nav {
-  background-color: #00705a;
-  color: #ffffff;
+  position: relative;
+  width: 100vw;
+  left: -10vw;
   padding: 1rem;
   text-align: center;
+  background: linear-gradient(to right, #00705a, #00a15e);
+  color: #ffffff;
   box-shadow: 0 2px 4px #00000037;
 }
 
@@ -29,8 +32,16 @@ nav {
 }
 
 #itemForm {
-  display: flex;
-  flex-direction: column;
+  /* Use flexbox to align content inside the element */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+
+  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
+  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
+  -ms-flex-direction: column; /* For Internet Explorer 10 */
+  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+
   align-items: center;
   margin-bottom: 2rem;
 }
@@ -58,9 +69,12 @@ input[type="number"]:focus {
 }
 
 .button-group {
-  display: flex;
+  /* Use flexbox to align content inside the element */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
   justify-content: center;
-  gap: 1rem; /* Space between buttons */
+  gap: 1rem; /* Set the gap between items of the element */
 }
 
 #submitButton,
@@ -82,11 +96,19 @@ input[type="number"]:focus {
 }
 
 .button-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0; /* Remove any gap between buttons */
-  justify-content: space-between; /* Distribute space between buttons */
-  width: 100%; /* Ensure it takes full width */
+  width: 100%; /* Set the width of the element */
+  /* Use flexbox to align content inside the element */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+
+  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
+  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
+  -ms-flex-direction: column; /* For Internet Explorer 10 */
+  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+
+  justify-content: space-between;
+  gap: 0; /* Set the gap between items of the element */
 }
 
 .editButton {
@@ -94,7 +116,7 @@ input[type="number"]:focus {
   background: #00705a;
   color: #ffffff;
   margin: 0 0 5px;
-  padding: 0.5rem 0; /* Adjust padding as needed */
+  padding: 0.5rem 0; /* Set the padding of the element */
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
   border-radius: 5px;
@@ -116,9 +138,12 @@ input[type="number"]:focus {
   transform: translateY(-2px);
 }
 .button-container {
-  display: flex;
-  justify-content: space-between; /* Distribute space between buttons */
-  width: 100%; /* Ensure it takes full width */
+  width: 100%; /* Set the width of the element */
+  /* Use flexbox to align content inside the element */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  justify-content: space-between;
 }
 
 .editButton,
@@ -126,11 +151,11 @@ input[type="number"]:focus {
   border: none;
   background: #00705a;
   color: #ffffff;
-  padding: 0.5rem; /* Adjust padding as needed */
+  padding: 0.5rem; /* Set the padding of the element */
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  transition: background 0.3s, transform 0.25s;
   border-radius: 5px;
-  width: auto; /* Allow buttons to size based on content */
+  width: auto; /* Set the width of the element */
 }
 
 .deleteButton {
@@ -178,7 +203,7 @@ p {
 }
 
 .purchased {
-  background-color: #007f5a;
+  background: linear-gradient(to right, #00705a, #00a15e);
   color: #ffffff;
 }
 
@@ -208,7 +233,11 @@ p {
   }
 
   .button-group {
-    flex-direction: column; /* Stack buttons on small screens */
-    gap: 0.5rem; /* Space between stacked buttons */
+    -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
+    -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
+    -ms-flex-direction: column; /* For Internet Explorer 10 */
+    flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+
+    gap: 0.5rem; /* Set the gap between items of the element */
   }
 }
