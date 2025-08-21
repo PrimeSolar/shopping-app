@@ -43,6 +43,11 @@ linkStyle.type = "text/css";
 linkStyle.href = "styles/style-min.css";
 document.querySelector("head").appendChild(linkStyle);
 
+// Insert <script src="scripts/components-min.js"></script>
+const componentsScript = document.createElement("script");
+componentsScript.src = "scripts/components-min.js";
+document.querySelector("body").appendChild(componentsScript);
+
 // Insert <link rel="icon" href="pics/logos/logo.svg">
 const linkImage = document.createElement("link");
 linkImage.rel = "icon";
