@@ -5,6 +5,14 @@ html {
   scroll-behavior: smooth; /* Set the scroll behavior of the element */
 }
 
+body {
+  margin: 0 10vw;
+  max-width: 80vw;
+  padding: 0;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+
 .wrapper {
   min-height: 100vh; /* Ensure the wrapper takes at least the full height of the viewport */
   display: flex; /* Use flexbox for layout */
@@ -13,14 +21,6 @@ html {
 
 .content {
   flex: 1; /* Allow content to grow and take available space */
-}
-
-body {
-  margin: 0 10vw;
-  max-width: 80vw;
-  padding: 0;
-  background-color: #f7f7f7;
-  overflow-x: hidden;
 }
 
 nav {
@@ -176,8 +176,6 @@ input[type="number"]:focus {
 
 #itemsDiv {
   margin-top: 2rem;
-  min-width: 80vw;
-  width: 80vw;
 }
 
 .item {
