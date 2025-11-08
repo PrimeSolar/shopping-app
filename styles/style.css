@@ -15,9 +15,9 @@
 
 html {
   margin: 0;
-  height: 100%; /* Set the height of the element */
+  height: 100%; /* Set the height of the element. */
   font-family: "Arial", sans-serif;
-  scroll-behavior: smooth; /* Set the scroll behavior of the element */
+  scroll-behavior: smooth; /* Set the scroll behavior of the element. */
 }
 
 body {
@@ -29,13 +29,13 @@ body {
 }
 
 .wrapper {
-  min-height: 100vh; /* Ensure the wrapper takes at least the full height of the viewport */
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Ensure the wrapper takes at least the full height of the viewport. */
+  display: flex; /* Use flexbox for layout. */
+  flex-direction: column; /* Stack children vertically. */
 }
 
 .content {
-  flex: 1; /* Allow content to grow and take available space */
+  flex: 1; /* Allow content to grow and take available space. */
 }
 
 nav {
@@ -59,15 +59,15 @@ nav {
 }
 
 #itemForm {
-  /* Use flexbox to align content inside the element */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  /* Use flexbox to align content inside the element. */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
 
-  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
-  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
-  -ms-flex-direction: column; /* For Internet Explorer 10 */
-  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari. */
+  -webkit-box-direction: normal; /* For older versions of Chrome and Safari. */
+  -ms-flex-direction: column; /* For Internet Explorer 10. */
+  flex-direction: column; /* Standard syntax for modern browsers (widely supported). */
 
   align-items: center;
   margin-bottom: 2rem;
@@ -96,12 +96,12 @@ input[type="number"]:focus {
 }
 
 .button-group {
-  /* Use flexbox to align content inside the element */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  /* Use flexbox to align content inside the element. */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
   justify-content: center;
-  gap: 1rem; /* Set the gap between items of the element */
+  gap: 1rem; /* Set the gap between items of the element. */
 }
 
 #submitButton,
@@ -123,19 +123,19 @@ input[type="number"]:focus {
 }
 
 .button-container {
-  width: 100%; /* Set the width of the element */
-  /* Use flexbox to align content inside the element */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  width: 100%; /* Set the width of the element. */
+  /* Use flexbox to align content inside the element. */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
 
-  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
-  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
-  -ms-flex-direction: column; /* For Internet Explorer 10 */
-  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari. */
+  -webkit-box-direction: normal; /* For older versions of Chrome and Safari. */
+  -ms-flex-direction: column; /* For Internet Explorer 10. */
+  flex-direction: column; /* Standard syntax for modern browsers (widely supported). */
 
   justify-content: space-between;
-  gap: 0; /* Set the gap between items of the element */
+  gap: 0; /* Set the gap between items of the element. */
 }
 
 .editButton {
@@ -143,7 +143,7 @@ input[type="number"]:focus {
   background: #00705a;
   color: #ffffff;
   margin: 0 0 5px;
-  padding: 0.5rem 0; /* Set the padding of the element */
+  padding: 0.5rem 0; /* Set the padding of the element. */
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
   border-radius: 5px;
@@ -165,11 +165,11 @@ input[type="number"]:focus {
   transform: translateY(-2px);
 }
 .button-container {
-  width: 100%; /* Set the width of the element */
-  /* Use flexbox to align content inside the element */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  width: 100%; /* Set the width of the element. */
+  /* Use flexbox to align content inside the element. */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
   justify-content: space-between;
 }
 
@@ -178,11 +178,11 @@ input[type="number"]:focus {
   border: none;
   background: #00705a;
   color: #ffffff;
-  padding: 0.5rem; /* Set the padding of the element */
+  padding: 0.5rem; /* Set the padding of the element. */
   cursor: pointer;
   transition: background 0.3s, transform 0.25s;
   border-radius: 5px;
-  width: auto; /* Set the width of the element */
+  width: auto; /* Set the width of the element. */
 }
 
 .deleteButton {
@@ -248,83 +248,83 @@ p {
 }
 
 footer {
-  color: #ffffff; /* Set the color for the text of the element */
-  left: -10vw; /* Position the element relative to the left edge of its nearest positioned ancestor */
-  margin: 1rem 0 0; /* Set the size of the margin for the element */
-  padding-top: 0; /* Set the thickness for the top padding area of the element */
-  padding-right: 0; /* Set the thickness for the right padding area of the element */
-  padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
-  padding-left: 0; /* Set the thickness for the left padding area of the element */
-  position: relative; /* Set the position of the element */
-  text-align: center; /* Align the text in the element */
-  width: 100vw; /* Set the width of the element */
+  color: #ffffff; /* Set the color for the text of the element. */
+  left: -10vw; /* Position the element relative to the left edge of its nearest positioned ancestor. */
+  margin: 1rem 0 0; /* Set the size of the margin for the element. */
+  padding-top: 0; /* Set the thickness for the top padding area of the element. */
+  padding-right: 0; /* Set the thickness for the right padding area of the element. */
+  padding-bottom: 0; /* Set the thickness for the bottom padding area of the element. */
+  padding-left: 0; /* Set the thickness for the left padding area of the element. */
+  position: relative; /* Set the position of the element. */
+  text-align: center; /* Align the text in the element. */
+  width: 100vw; /* Set the width of the element. */
   background: linear-gradient();
   background: -moz-linear-gradient(
     to right,
     #00705a,
     #00a15e
-  ); /* For older versions of Firefox */
+  ); /* For older versions of Firefox. */
   background: -o-linear-gradient(
     to right,
     #00705a,
     #00a15e
-  ); /* For older versions of Opera */
+  ); /* For older versions of Opera. */
   background: -webkit-linear-gradient(
     to right,
     #00705a,
     #00a15e
-  ); /* For older versions of Chrome and Safari */
+  ); /* For older versions of Chrome and Safari. */
   background: -ms-linear-gradient(
     to right,
     #00705a,
     #00a15e
-  ); /* For Internet Explorer 10 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00705a', endColorstr='#00a15e', GradientType=0); /* For Internet Explorer 9 and below */
+  ); /* For Internet Explorer 10. */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00705a', endColorstr='#00a15e', GradientType=0); /* For Internet Explorer 9 and below. */
   background: linear-gradient(
     to right,
     #00705a,
     #00a15e
-  ); /* Standard syntax for modern browsers (widely supported) */
+  ); /* Standard syntax for modern browsers (widely supported). */
 }
 
 footer p {
-  margin: 21px 0px; /* Set the size of the margin for the element */
+  margin: 21px 0px; /* Set the size of the margin for the element. */
 }
 
 footer a {
-  color: #ffffff; /* Set the color for the text of the element */
-  text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation */
+  color: #ffffff; /* Set the color for the text of the element. */
+  text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation. */
 }
 
 footer a:visited {
-  color: #ffffff; /* Set the color for the text of the element */
+  color: #ffffff; /* Set the color for the text of the element. */
 }
 
 .bmc-button {
-  display: block; /* Specify the display behavior of the element */
-  width: fit-content; /* Set the width of the element */
-  height: 1.5rem; /* Set the height of the element */
-  margin: 0 auto 25px; /* Set the size for the margin of the element */
-  background-color: #ff843f !important; /* Set the color for the background of the element */
-  color: #ffffff; /* Set the color for the text of the element */
-  font-family: "Cookie", cursive; /* Set the font family for the text of the element */
-  font-weight: bold; /* Set the font weight for the text of the element */
-  text-decoration: none; /* Set the decoration for the text of the element */
-  text-shadow: 1px 1px 2px #00000080; /* Set the shadow for the text of the element */
+  display: block; /* Specify the display behavior of the element. */
+  width: fit-content; /* Set the width of the element. */
+  height: 1.5rem; /* Set the height of the element. */
+  margin: 0 auto 25px; /* Set the size for the margin of the element. */
+  background-color: #ff843f !important; /* Set the color for the background of the element. */
+  color: #ffffff; /* Set the color for the text of the element. */
+  font-family: "Cookie", cursive; /* Set the font family for the text of the element. */
+  font-weight: bold; /* Set the font weight for the text of the element. */
+  text-decoration: none; /* Set the decoration for the text of the element. */
+  text-shadow: 1px 1px 2px #00000080; /* Set the shadow for the text of the element. */
   border: none;
-  padding: 10px 20px; /* Set the padding of the element */
-  cursor: pointer; /* Specify the type of cursor to be displayed when hovering over the element */
+  padding: 10px 20px; /* Set the padding of the element. */
+  cursor: pointer; /* Specify the type of cursor to be displayed when hovering over the element. */
   outline: none;
-  box-shadow: 0 4px 8px #00000037; /* Set the shadow of the element */
-  /* Set the border radius for the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
-  -moz-border-radius: 5px; /* For older versions of Firefox */
-  -o-border-radius: 5px; /* For older versions of Opera */
-  border-radius: 5px; /* Standard property for border radius */
-  /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
-  -o-transition: 0.5s; /* For older versions of Opera */
-  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
+  box-shadow: 0 4px 8px #00000037; /* Set the shadow of the element. */
+  /* Set the border radius for the corners of the element. */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari. */
+  -moz-border-radius: 5px; /* For older versions of Firefox. */
+  -o-border-radius: 5px; /* For older versions of Opera. */
+  border-radius: 5px; /* Standard property for border radius. */
+  /* Add a transition effect for changes in properties. */
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari. */
+  -o-transition: 0.5s; /* For older versions of Opera. */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported). */
 }
 
 .bmc-button:active {
@@ -368,11 +368,11 @@ to-top.active {
   }
 
   .button-group {
-    -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
-    -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
-    -ms-flex-direction: column; /* For Internet Explorer 10 */
-    flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+    -webkit-box-orient: vertical; /* For older versions of Chrome and Safari. */
+    -webkit-box-direction: normal; /* For older versions of Chrome and Safari. */
+    -ms-flex-direction: column; /* For Internet Explorer 10. */
+    flex-direction: column; /* Standard syntax for modern browsers (widely supported). */
 
-    gap: 0.5rem; /* Set the gap between items of the element */
+    gap: 0.5rem; /* Set the gap between items of the element. */
   }
 }
