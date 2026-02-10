@@ -16,7 +16,7 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-// The Scroll to Top Button
+/** The scroll to top button. */
 class scrollToTop extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -42,12 +42,12 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// The Footer
+/** The footer. */
 footerContainer = document.querySelector("footer");
 const year = new Date().getFullYear();
 function footerContainerF(e) {
   e &&
-    // Define the footer content:
+    /** Define the footer content. */
     (e.innerHTML += `
       <p>Copyright © <a href="https://primesolar.github.io/web-developer/" rel="noopener noreferrer">Vladislav Kazantsev</a> ${year}</p>
       <a type="button" class="bmc-button" href="https://www.buymeacoffee.com/CocaCola" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">☕ Buy me a coffee</a>`);
