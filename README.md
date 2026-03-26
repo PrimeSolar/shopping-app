@@ -1,8 +1,8 @@
-# Shopping App
+# Shopping Application
 
-&nbsp;&nbsp;Welcome to the Shopping App, a web application designed to simplify your shopping experience! 🛒
+&nbsp;&nbsp;Welcome to the Shopping Application designed to simplify your experience by streamlining purchases! 🛒
 
-- [Shopping App](#shopping-app)
+- [Shopping Application](#shopping-application)
   - [Interface](#interface)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
@@ -12,7 +12,11 @@
 
 ## Interface
 
-&nbsp;&nbsp;The interface is designed to be user-friendly and visually appealing.
+&nbsp;&nbsp;The interface combines visually appealing design with intuitive navigation, enabling you to access real-time shopping data. Every component is strategically placed to support quick decision-making and purchase analysis.
+
+<!--prettier-ignore-->
+<img alt="Shopping Application" src="assets/interface.png"/>
+<p align="center"><em>The Shopping Application Interface</em></p>
 
 ## Features
 
@@ -48,7 +52,7 @@ git clone https://github.com/PrimeSolar/shopping-app.git
 
 **Click the image to support my work:**
 
-<a href="https://coff.ee/cocacola">
+<a href="https://coff.ee/cocacola" rel="noopener noreferrer">
   <img src="assets/coffee.jpg" width="370" height="auto" alt="Buy Me a Coffee"/>
 </a>
 
