@@ -37,22 +37,22 @@ itemForm.onsubmit = async (event) => {
 
   if (editingItemId) {
     await db.items.update(editingItemId, { description, quantity, price });
-    editingItemId = null; // Reset editing identifier
+    editingItemId = null; /** Reset editing identifier. */
     alert("Item updated successfully.");
   } else {
     await db.items.add({ description, quantity, price, purchased: false });
     alert("Item added successfully.");
   }
 
-  // Reset the form
+  /** Reset the form. */
   itemForm.reset();
 
-  // Update the displayed items
+  /** Update the displayed items. */
   displayItems();
 };
 
 async function displayItems() {
-  itemsDiv.innerHTML = ""; // Clear existing items
+  itemsDiv.innerHTML = ""; /** Clear existing items. */
   const items = await db.items.toArray();
   let totalPrice = 0;
 
@@ -81,7 +81,7 @@ async function displayItems() {
       `;
 
     itemsDiv.appendChild(itemDiv);
-    totalPrice += item.quantity * item.price; // Calculate total price
+    totalPrice += item.quantity * item.price; /** Calculate total price. */
   });
 
   totalPriceDiv.innerText = `Total Price: ${totalPrice.toFixed(2)}$`;
@@ -108,16 +108,16 @@ const editItem = async (id, button) => {
 
   editingItemId = id;
 
-  // Change the button text to "Cancel"
+  /** Change the button text to "Cancel". */
   button.innerText = "Cancel";
   button.setAttribute("onclick", `cancelEdit(${id}, this)`);
 };
 
 const cancelEdit = (id, button) => {
-  // Reset the editing item identifier
+  /** Reset the editing item identifier. */
   editingItemId = null;
 
-  // Reset the form
+  /** Reset the form. */
   itemForm.reset();
 
   button.innerText = "Edit";
@@ -128,6 +128,8 @@ clearButton.onclick = async () => {
   if (confirm("Are you sure you want to clear all items?")) {
     await db.items.clear();
     displayItems();
-    alert("All items cleared successfully."); // Alert message after clearing
+    alert(
+      "All items cleared successfully."
+    ); /** Alert message after clearing. */
   }
 };
