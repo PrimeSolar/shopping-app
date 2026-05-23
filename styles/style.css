@@ -20,6 +20,8 @@ html {
   scroll-behavior: smooth; /* Set the scroll behavior of the element. */
 }
 
+/* The style sheet includes detailed property comments
+to support stakeholders with varying CSS knowledge. */
 body {
   margin: 0 10vw;
   max-width: 80vw;
@@ -333,22 +335,22 @@ footer a:visited {
 }
 
 to-top {
-  background: #009688;
   position: fixed;
   bottom: calc(3.5rem + 1px);
   right: 25px;
+  border-radius: 50%;
   width: 45px;
   height: 45px;
-  border-radius: 50%;
+  font-size: 16px;
+  text-decoration: none;
   z-index: 2;
+  background: #009688;
   opacity: 0;
+  cursor: pointer;
+  transition: 0.25s;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  text-decoration: none;
-  pointer-events: none;
-  transition: 0.25s;
 }
 
 to-top.active {
