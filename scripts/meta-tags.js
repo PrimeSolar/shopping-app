@@ -1,5 +1,24 @@
 /*
- * Script
+ * Configuration Script
+ *
+ * This script sets up the important HTML structure for the web application.
+ * It dynamically inserts metadata and styles to configure the document's head elements
+ * for optimal SEO, accessibility, and user experience.
+ *
+ * Key Features:
+ * - Sets the default language of the document to English (`lang = "en"`).
+ * - Defines the default text direction as left-to-right (`dir = "ltr"`).
+ * - Configures the document title for the web page.
+ * - Includes metadata to enhance SEO.
+ * - Links to the style sheet for styling the application.
+ * - Adds a badge to enhance brand identity.
+ * - Specifies the type attribute for all script elements for better compatibility.
+ *
+ * Any corresponding manual changes in the HTML document would be overridden at runtime.
+ * The <meta> charset tag is hardcoded because it needs to be guaranteed to be within the first 1024 bytes of the HTML document,
+ * as some browsers only look at those bytes before choosing an encoding
+ * (see https://html.spec.whatwg.org/multipage/semantics.html#charset).
+ * The <meta> viewport tag is hardcoded to ensure the immediate correct page rendering.
  *
  * Copyright © Vladislav Kazantsev
  * All rights reserved.
@@ -13,37 +32,31 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-// Set the <html> element `lang` property
+/** Set the <html> element `lang` property. */
 const html = document.querySelector("html");
 html.lang = "en";
 
-// Set `dir="ltr"` for the <html> element
+/** Set `dir="ltr"` for the <html> element. */
 html.dir = "ltr";
 
-// Set <meta name="viewport" content="width=device-width, initial-scale=1" />
-const metaViewport = document.createElement("meta");
-metaViewport.name = "viewport";
-metaViewport.content = "width=device-width, initial-scale=1";
-document.querySelector("head").appendChild(metaViewport);
+/** Set `title` for the <html> element based on a webpage's content. */
+const titleText = document.querySelector("h1").textContent;
+document.title = `${titleText} | Full Stack Developer Vladislav Kazantsev`;
 
-// Set `title` for the <html> element based on a webpage's content
-const title = document.querySelector("h1");
-document.title = title.textContent;
-
-// Insert <meta name="author" content="Vladislav Kazantsev">
+/** Insert <meta name="author" content="Vladislav Kazantsev">. */
 const metaAuthor = document.createElement("meta");
 metaAuthor.name = "author";
 metaAuthor.content = "Vladislav Kazantsev";
 document.querySelector("head").appendChild(metaAuthor);
 
-// Insert <meta name="copyright" content="© `Current Year` Vladislav Kazantsev">
+/** Insert <meta name="copyright" content="© `Current Year` Vladislav Kazantsev">. */
 const metaCopyright = document.createElement("meta");
 metaCopyright.name = "copyright";
 metaCopyright.content =
   "© " + new Date().getFullYear() + " Vladislav Kazantsev";
 document.querySelector("head").appendChild(metaCopyright);
 
-// Insert <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+/** Insert <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">. */
 const linkNormalize = document.createElement("link");
 linkNormalize.rel = "stylesheet";
 linkNormalize.type = "text/css";
@@ -51,25 +64,30 @@ linkNormalize.href =
   "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
 document.querySelector("head").appendChild(linkNormalize);
 
-// Insert <link rel="stylesheet" type="text/css" href="styles/style-min.css">
+/** Insert <link rel="stylesheet" type="text/css" href="styles/style-min.css">. */
 const linkStyle = document.createElement("link");
 linkStyle.rel = "stylesheet";
 linkStyle.type = "text/css";
 linkStyle.href = "styles/style-min.css";
 document.querySelector("head").appendChild(linkStyle);
 
-// Insert <script src="scripts/components-min.js"></script>
+/** Insert <script type="text/javascript" src="scripts/components-min.js"></script>. */
 const componentsScript = document.createElement("script");
 componentsScript.src = "scripts/components-min.js";
 document.querySelector("body").appendChild(componentsScript);
 
-// Insert <link rel="icon" href="pics/logos/logo.svg">
+/** Insert <link rel="icon" href="pics/logos/logo.svg">. */
 const linkImage = document.createElement("link");
 linkImage.rel = "icon";
 linkImage.href = "assets/logo.svg";
 document.querySelector("head").appendChild(linkImage);
 
-// Set `type="text/javascript"` for all <script> elements for better compatibility
+/** Insert <script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.min.js"></script>. */
+const jQuery = document.createElement("script");
+jQuery.src = "https://code.jquery.com/jquery-4.0.0.min.js";
+document.querySelector("body").appendChild(jQuery);
+
+/** Set `type="text/javascript"` for all <script> elements for better compatibility. */
 for (let x of document.querySelectorAll("script")) {
   x.type = "text/javascript";
 }
