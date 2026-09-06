@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html
+  lang="en"
+  dir="ltr"
+  itemscope
+  itemtype="https://schema.org/WebApplication"
+>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Vladislav Kazantsev" />
+    <meta name="copyright" content="© 2026 Vladislav Kazantsev" />
     <meta
       name="description"
       content="The Shopping App is a user-friendly web application designed to simplify your online shopping experience. Save your favorite items for future purchases and manage them in your cart with ease. Optimized for both desktop and mobile devices for shopping on the go. Technologies Used: JavaScript, HTML, CSS, IndexedDB, Dexie.js."
@@ -10,13 +18,23 @@
       name="keywords"
       content="shopping, app, web, simplify, online, cart, desktop, mobile, responsive, design"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Shopping Application"
+      }
+    </script>
+    <title>Shopping List 🛒 | Full Stack Developer Vladislav Kazantsev</title>
   </head>
   <body>
     <noscript>For the full experience, JavaScript must be turned on.</noscript>
     <div class="wrapper">
       <div class="content">
         <nav>
-          <h1>Shopping List 🛒</h1>
+          <h1 itemprop="headline">
+            Shopping List <span aria-hidden="true">🛒</span>
+          </h1>
         </nav>
 
         <div class="container">
@@ -58,8 +76,12 @@
       </div>
       <footer></footer>
     </div>
-    <script src="https://npmcdn.com/dexie@4.0.11/dist/dexie.min.js"></script>
-    <script src="scripts/shopping-min.js"></script>
-    <script src="scripts/meta-tags-min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://npmcdn.com/dexie@4.0.11/dist/dexie.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/shopping-min.js"></script>
+    <script type="text/javascript" src="scripts/meta-tags-min.js"></script>
+    <script type="text/javascript" src="scripts/headings.js"></script>
   </body>
 </html>
